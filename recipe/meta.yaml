@@ -1,5 +1,5 @@
 {% set name = "eo_tools" %}
-{% set version = "2024.6.0" %}
+{% set version = "2024.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
