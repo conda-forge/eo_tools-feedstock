@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/odhondt/eo_tools/archive/{{ version }}.tar.gz
-  sha256: aabebdafb07061c373a6a34c3583f41652f38683f1b54f8dfbaeb853160f3206
+  sha256: 7ff43f22f5c77f126188258ca6a4f2852fdf4dbfe30928ec3cb9b09e8bfe063b
 
 build:
   noarch: python
