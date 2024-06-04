@@ -56,9 +56,12 @@ test:
 
 about:
   home: https://github.com/odhondt/eo_tools
-  summary: 'A toolbox for easily searching, downloading & processing remote sensing imagery from various public sources. '
+  summary: 'A toolbox for easily searching, downloading & processing remote sensing imagery from various public sources.'
+  description: |
+    eo_tools is a pure python toolbox that is currently able to search, download and process Sentinel-1 InSAR pairs, download and mosaic Sentinel-2 tiles and download various publicly available DEM (Digital Elevation Models). The S1 processor can compute phase, amplitude and coherence in the SAR geometry and reproject them in a geographic coordinate system. Example notebooks demonstrating the different features are located in the notebooks-cf folder of the github repository.
   license: MIT
   license_file: LICENSE
+  doc_url: https://github.com/odhondt/eo_tools/blob/main/README.md
 
 extra:
   recipe-maintainers:
