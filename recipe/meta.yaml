@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/odhondt/eo_tools/archive/{{ version }}.tar.gz
-  sha256: 2c5cb66a1dcb5ecf1db7eeab9b7c5b2a0db66bd7bc701db14503dcf21fa6f80f
+  sha256: aabebdafb07061c373a6a34c3583f41652f38683f1b54f8dfbaeb853160f3206
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -52,6 +52,7 @@ requirements:
 test:
   imports:
     - eo_tools
+    - eo_tools.S1
 
 about:
   home: https://github.com/odhondt/eo_tools
