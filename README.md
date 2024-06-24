@@ -1,4 +1,4 @@
-About eo_tools-feedstock
+About eo-tools-feedstock
 ========================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eo_tools-feedstock/blob/main/LICENSE.txt)
@@ -7,7 +7,12 @@ Home: https://github.com/odhondt/eo_tools
 
 Package license: MIT
 
-Summary: A toolbox for easily searching, downloading & processing remote sensing imagery from various public sources. 
+Summary: A toolbox for easily searching, downloading & processing remote sensing imagery from various public sources.
+
+Documentation: https://eo-tools.readthedocs.io/en/latest/
+
+eo-tools is a pure python toolbox that is currently able to search, download and process Sentinel-1 InSAR pairs, download and mosaic Sentinel-2 tiles and download various publicly available DEM (Digital Elevation Models). The S1 processor can compute phase, amplitude and coherence in the SAR geometry and reproject them in a geographic coordinate system. Example notebooks demonstrating the different features are located in the notebooks-cf folder of the github repository.
+
 
 Current build status
 ====================
@@ -27,53 +32,53 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-eo_tools-green.svg)](https://anaconda.org/conda-forge/eo_tools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/eo_tools.svg)](https://anaconda.org/conda-forge/eo_tools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/eo_tools.svg)](https://anaconda.org/conda-forge/eo_tools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/eo_tools.svg)](https://anaconda.org/conda-forge/eo_tools) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-eo--tools-green.svg)](https://anaconda.org/conda-forge/eo-tools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/eo-tools.svg)](https://anaconda.org/conda-forge/eo-tools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/eo-tools.svg)](https://anaconda.org/conda-forge/eo-tools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/eo-tools.svg)](https://anaconda.org/conda-forge/eo-tools) |
 
-Installing eo_tools
+Installing eo-tools
 ===================
 
-Installing `eo_tools` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `eo-tools` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `eo_tools` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `eo-tools` can be installed with `conda`:
 
 ```
-conda install eo_tools
-```
-
-or with `mamba`:
-
-```
-mamba install eo_tools
-```
-
-It is possible to list all of the versions of `eo_tools` available on your platform with `conda`:
-
-```
-conda search eo_tools --channel conda-forge
+conda install eo-tools
 ```
 
 or with `mamba`:
 
 ```
-mamba search eo_tools --channel conda-forge
+mamba install eo-tools
+```
+
+It is possible to list all of the versions of `eo-tools` available on your platform with `conda`:
+
+```
+conda search eo-tools --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search eo-tools --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search eo_tools --channel conda-forge
+mamba repoquery search eo-tools --channel conda-forge
 
-# List packages depending on `eo_tools`:
-mamba repoquery whoneeds eo_tools --channel conda-forge
+# List packages depending on `eo-tools`:
+mamba repoquery whoneeds eo-tools --channel conda-forge
 
-# List dependencies of `eo_tools`:
-mamba repoquery depends eo_tools --channel conda-forge
+# List dependencies of `eo-tools`:
+mamba repoquery depends eo-tools --channel conda-forge
 ```
 
 
@@ -118,17 +123,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating eo_tools-feedstock
+Updating eo-tools-feedstock
 ===========================
 
-If you would like to improve the eo_tools recipe or build a new
+If you would like to improve the eo-tools recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/eo_tools-feedstock are
+Note that all branches in the conda-forge/eo-tools-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
