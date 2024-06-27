@@ -33,6 +33,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-eo--tools-green.svg)](https://anaconda.org/conda-forge/eo-tools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/eo-tools.svg)](https://anaconda.org/conda-forge/eo-tools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/eo-tools.svg)](https://anaconda.org/conda-forge/eo-tools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/eo-tools.svg)](https://anaconda.org/conda-forge/eo-tools) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-eo_tools-green.svg)](https://anaconda.org/conda-forge/eo_tools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/eo_tools.svg)](https://anaconda.org/conda-forge/eo_tools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/eo_tools.svg)](https://anaconda.org/conda-forge/eo_tools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/eo_tools.svg)](https://anaconda.org/conda-forge/eo_tools) |
 
 Installing eo-tools
 ===================
@@ -44,16 +45,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `eo-tools` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `eo-tools, eo_tools` can be installed with `conda`:
 
 ```
-conda install eo-tools
+conda install eo-tools eo_tools
 ```
 
 or with `mamba`:
 
 ```
-mamba install eo-tools
+mamba install eo-tools eo_tools
 ```
 
 It is possible to list all of the versions of `eo-tools` available on your platform with `conda`:
