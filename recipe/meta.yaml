@@ -1,4 +1,4 @@
-{% set version = "2024.6.3" %}
+{% set version = "2024.7.0" %}
 
 package:
   name: eo-tools
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/odhondt/eo_tools/archive/{{ version }}.tar.gz
-  sha256: 0dcd3d47d44cf27b245c8eaa4e10060620e0307f5372be06b509c9b31911f3ac
+  sha256: 4e0063ac884df9f421206c4b298e5908ac0b0a29c1edae42ea3fe960ea2c5ae2
 
 build:
   noarch: python
-  number: 1
+  number: 0
 
 outputs:
   - name: eo-tools
@@ -56,6 +56,7 @@ outputs:
         - uvloop ==0.19.0
         - python-dotenv ==1.0.1
         - httptools ==0.6.1
+        - numexpr ==2.10.0
     test:
       imports:
         - eo_tools
