@@ -1,4 +1,4 @@
-{% set version = "2024.7.0" %}
+{% set version = "2024.8.0" %}
 
 package:
   name: eo-tools
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/odhondt/eo_tools/archive/{{ version }}.tar.gz
-  sha256: 4e0063ac884df9f421206c4b298e5908ac0b0a29c1edae42ea3fe960ea2c5ae2
+  sha256: 0df4a5d1ccaa336af1659b7758dfec6088ffab8e9444b4a98517663f75ba3e26
 
 build:
   noarch: python
@@ -75,7 +75,7 @@ outputs:
 
 about:
   home: https://github.com/odhondt/eo_tools
-  summary: 'A toolbox for easily searching, downloading & processing remote sensing imagery from various public sources.'
+  summary: 'A toolbox for easily searching, downloading & processing remote sensing imagery from various public sources. Includes a Sentinel-1 InSAR processor.'
   description: |
     eo-tools is a pure python toolbox that is currently able to search, download and process Sentinel-1 InSAR pairs, download and mosaic Sentinel-2 tiles and download various publicly available DEM (Digital Elevation Models). The S1 processor can compute phase, amplitude and coherence in the SAR geometry and reproject them in a geographic coordinate system. Example notebooks demonstrating the different features are located in the notebooks-cf folder of the github repository.
   license: MIT
