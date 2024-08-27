@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/odhondt/eo_tools/archive/{{ version }}.tar.gz
-  sha256: 600176b0ff70bf07d3bcfc2e124d438fd3770eb7d09550dffd9ada6b2682dfc7
+  sha256: 5eda9a75d0055d598d94872c5bec180ebb45127dc3ad362ea02089cb9de16cbb
 
 build:
   noarch: python
-  number: 0
+  number: 1
 
 outputs:
   - name: eo-tools
