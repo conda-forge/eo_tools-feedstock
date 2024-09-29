@@ -1,4 +1,4 @@
-{% set version = "2024.9.1" %}
+{% set version = "2024.9.2" %}
 
 package:
   name: eo-tools
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/odhondt/eo_tools/archive/{{ version }}.tar.gz
-  sha256: 013204838e66afd6e954aeda5e5e641d1fbfc0f31e437f55c037686ba1cae25f
+  sha256: 9450a836aa68bef238e3bcf22dee9a51efb77e52bae20be739f60a501cba1962
 
 build:
   noarch: python
