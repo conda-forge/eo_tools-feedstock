@@ -7,7 +7,7 @@ Home: https://github.com/odhondt/eo_tools
 
 Package license: MIT
 
-Summary: A toolbox for easily searching, downloading & processing remote sensing imagery from various public sources.
+Summary: A toolbox for easily searching, downloading & processing remote sensing imagery from various public sources. Includes a Sentinel-1 InSAR processor.
 
 Documentation: https://eo-tools.readthedocs.io/en/latest/
 
