@@ -1,3 +1,4 @@
+{% set python_min = '3.12' %}
 {% set version = "2025.1.0" %}
 
 package:
@@ -10,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
 
 outputs:
   - name: eo-tools
@@ -19,12 +20,12 @@ outputs:
       build:
         - python
       host:
-        - python
+        - python {{ python_min }}
         - setuptools
         - wheel
         - pip
       run:
-        - python >=3.12,<3.13
+        - python >={{ python_min }},<3.13
         - pyproj ==3.6.1
         - pytest ==8.3.4
         - gdal ==3.10.0
@@ -59,6 +60,8 @@ outputs:
         - httptools ==0.6.4
         - planetary-computer ==1.0.0
     test:
+      requires:
+        - python {{ python_min }}
       imports:
         - eo_tools
         - eo_tools.S1
