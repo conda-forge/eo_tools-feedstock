@@ -11,7 +11,7 @@ Summary: A toolbox for easily searching, downloading & processing remote sensing
 
 Documentation: https://eo-tools.readthedocs.io/en/latest/
 
-eo-tools is a pure python toolbox that is currently able to search, download and process Sentinel-1 InSAR pairs, geocode and apply terrain correction to Sentinel-1 SLC products, download and mosaic Sentinel-2 tiles and download various publicly available DEM (Digital Elevation Models). The S1 InSAR processor can compute phase, amplitude and coherence in the SAR geometry and reproject them in a geographic coordinate system. Example notebooks demonstrating the different features are located in the notebooks-cf folder of the github repository.
+eo-tools is a pure python toolbox that is currently able to search, download and process Sentinel-1 InSAR pairs, geocode and apply terrain flattening to Sentinel-1 SLC products, download and mosaic Sentinel-2 tiles and download various publicly available DEM (Digital Elevation Models). The S1 InSAR processor can compute phase, amplitude and coherence in the SAR geometry and reproject them in a geographic coordinate system. Example notebooks demonstrating the different features are located in the notebooks-cf folder of the github repository.
 
 
 Current build status
@@ -33,7 +33,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-eo--tools-green.svg)](https://anaconda.org/conda-forge/eo-tools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/eo-tools.svg)](https://anaconda.org/conda-forge/eo-tools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/eo-tools.svg)](https://anaconda.org/conda-forge/eo-tools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/eo-tools.svg)](https://anaconda.org/conda-forge/eo-tools) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-eo_tools-green.svg)](https://anaconda.org/conda-forge/eo_tools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/eo_tools.svg)](https://anaconda.org/conda-forge/eo_tools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/eo_tools.svg)](https://anaconda.org/conda-forge/eo_tools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/eo_tools.svg)](https://anaconda.org/conda-forge/eo_tools) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-eo__tools-green.svg)](https://anaconda.org/conda-forge/eo_tools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/eo_tools.svg)](https://anaconda.org/conda-forge/eo_tools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/eo_tools.svg)](https://anaconda.org/conda-forge/eo_tools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/eo_tools.svg)](https://anaconda.org/conda-forge/eo_tools) |
 
 Installing eo-tools
 ===================
