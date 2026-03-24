@@ -1,5 +1,5 @@
 {% set python_min = "3.12" %}
-{% set version = "2025.6.1" %}
+{% set version = "2026.3.0" %}
 
 package:
   name: eo-tools
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/odhondt/eo_tools/archive/{{ version }}.tar.gz
-  sha256: 1bd05f59f7274cc4e52212636a0ba20094e0851eb1118cd7cbdc4d7010b32c20
+  sha256: ad31ed236566e8a57f4e3437c5ee411800ea653854def46fb775421acc681c3d
 
 build:
   noarch: python
