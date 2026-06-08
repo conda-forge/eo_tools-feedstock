@@ -1,5 +1,5 @@
 {% set python_min = "3.12" %}
-{% set version = "2026.3.0" %}
+{% set version = "2026.6.0" %}
 
 package:
   name: eo-tools
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/odhondt/eo_tools/archive/{{ version }}.tar.gz
-  sha256: ad31ed236566e8a57f4e3437c5ee411800ea653854def46fb775421acc681c3d
+  sha256: 2c1a13aa67f8bde3de1cd9ad8084d67e117dc109e46230b7a6c8864c05881b17
 
 build:
   noarch: python
@@ -27,31 +27,31 @@ outputs:
       run:
         - python >={{ python_min }},<3.13
         - pyproj ==3.7.2
-        - pytest ==9.0.2
-        - gdal ==3.12.2
-        - libgdal-jp2openjpeg ==3.12.2
+        - gdal ==3.12.3
+        - libgdal-jp2openjpeg ==3.12.3
         - rasterio ==1.5.0
-        - pyrosar ==0.35.0
-        - spatialist ==0.18.0
-        - pip ==26.0.1
+        - pyrosar ==0.36.2
+        - spatialist ==0.19.0
+        - pip ==26.1.2
         - pystac ==1.14.3
         - pystac-client ==0.9.0
+        - boto3 ==1.43.23
+        - pyyaml ==6.0.3
         - geopandas ==1.1.3
         - pandas ==2.2.3
         - eodag ==3.10.0
         - ipykernel ==7.2.0
         - ipywidgets ==8.1.8
-        - black ==26.3.1
         - scikit-image ==0.26.0
         - ipyleaflet ==0.20.0
         - folium ==0.20.0
-        - tqdm ==4.67.3
+        - tqdm ==4.68.1
         - xmltodict ==1.0.4
         - httpx ==0.28.1
-        - xarray ==2026.2.0
+        - xarray ==2026.4.0
         - netcdf4 ==1.7.4
         - rioxarray ==0.22.0
-        - numba ==0.64.0
+        - numba ==0.65.1
         - dask ==2026.3.0
         - bottleneck ==1.6.0
         - planetary-computer ==1.0.0
