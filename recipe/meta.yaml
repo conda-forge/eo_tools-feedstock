@@ -20,7 +20,7 @@ outputs:
       build:
         - python
       host:
-        - python
+        - python {{ python_min }}
         - setuptools
         - wheel
         - pip
